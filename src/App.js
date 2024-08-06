@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import HeroSection from './components/HeroSection'
+import Footer from './components/Footer';
+import Header from './components/Header';
+import AdmissionAndInfo from './components/AdmissionsAndInfo';
+import AboutUsSection from './components/AboutUsSection';
+import ProgrammesSection from './components/ProgrammesSection';
+import HowToApplySection from './components/HowToApplySection';
+import TestimonialsSection from './components/TestimonialsSection';
+import AcademicCalenderSection from './components/AcademicCalendarSection';
+import EventsSection from './components/EventsSection';
+import NewsSection from './components/NewsSection';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+        <Header/>
+        <HeroSection/>
+        <AdmissionAndInfo/>
+        <AboutUsSection/>
+        <ProgrammesSection/>
+        <HowToApplySection/>
+        <TestimonialsSection/>
+        <AcademicCalenderSection/>
+        <EventsSection/>
+        <NewsSection/>
+       
+
+        <Footer/>
+        
     </div>
   );
 }
